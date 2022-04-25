@@ -9,7 +9,7 @@ recipient_address = "recipient_email@yahoo.com"
 
 # Determine STOCK price increase/decrease between yesterday and the day before yesterday
 api_url = "https://www.alphavantage.co/query"
-api_key = "LC24BRFD7074L98D"
+api_key = "00000000000000000"
 params = {"function":"TIME_SERIES_DAILY",
           "symbol":STOCK,
           "apikey":api_key}
@@ -25,7 +25,7 @@ percentage_change = (last_trading_day_close - day_before_last_close)/day_before_
 if abs(percentage_change) > 5:
     #get the first 3 news pieces for the COMPANY_NAME.
     api_url = "https://newsapi.org/v2/everything"
-    api_key = "c91b0b75fce946aab2176ddf18f39ab1"
+    api_key = "00000000000000000"
     params = {"q":COMPANY_NAME,
               "sortby":"publishedAt",
               "searchIn":"title",
